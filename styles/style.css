@@ -1,0 +1,397 @@
+/* ------------- */
+/* Armado general de la pagina Header-Main-Footer */
+
+/* Importamos la fuente desde google fonts para la cabecera*/
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+.arizonia-regular {
+    font-family: "Arizonia", cursive;
+    font-weight: 40rem;
+    font-style: normal;
+} 
+/* Aplicamos la fuente y ajustamos la altura a todos los body del sitio web*/
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+}
+/* Header */
+header{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgb(167, 146, 119) 5%, rgb(204, 204, 204) 65%);
+}
+h1{
+    font-family: "Arizonia", cursive;
+    font-size: 7rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+nav{
+    width: 100%;
+}
+.menuNavegacion{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 3.2rem;
+}
+.menuNavegacion li{
+    border-right: rgb(167, 146, 119) solid 0.15rem;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.menuNavegacion a{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+}
+/* Main */
+main{
+    height: auto;
+    width: 100%;
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: 20rem;
+    background: linear-gradient(360deg, rgb(167, 146, 119) 0%, rgb(204, 204, 204) 98%);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.footerDisplay{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
+hr{
+    height: 0.2rem;
+    width: 50rem;
+    background-color: black;
+}
+.redesSociales{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.redesSociales a{
+    margin: 2rem;
+}
+.redesSociales img{
+    height: 4rem;
+    width: auto;
+}
+.linksFooter div{
+    font-size: 1.2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+a{
+    margin: 0rem 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------- */
+/* Pagina Index */
+
+.carreteFotos{
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.articuloIndex {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.especialidad{
+    order: 1;
+}
+.variedad{
+    order: 2;
+}
+.postre{
+    order: 3;
+}
+.imgIndex{
+    width: 100%;
+    height: auto;
+}
+
+/* ------------- */
+/* Pagina About Us */
+
+.contenedorSlide{
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+.contenedorArticle img{
+    height: 50vh;
+    width: auto;
+}
+.contenedorArticle{
+    width: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+    border: 0.1rem solid black;
+}
+.flechaIzq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid black;
+    border-radius: 50% 0 0 50%;
+}
+.flechaIzq img{
+    rotate: 270deg;
+    height: 2vh;
+}
+.flechaDer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid black;
+    border-radius: 0 50% 50% 0;
+}
+.flechaDer img{
+    rotate: 90deg;
+    height: 2vh;
+}
+.articuloAbout{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.articuloAbout p{
+    padding: 1vh 1vw;
+}
+
+/* ------------- */
+/* Pagina Review */
+
+/* Ajustes imagenes */
+.imgComentarios {
+    height: 4rem;
+    width: auto;
+}
+
+/* Linea de comentarios en forma de linea del tiempo */
+.timeLine{
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.linea {
+    width: 70%;
+    height: 0.2rem;
+    background-color: black;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.marca{
+    border-radius: 100%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: black;
+    
+}
+.comentarioBox{
+    width: 25vh;
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1vh 20vw;
+}
+.desplazar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.comentarioDoble{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    opacity: 65%;
+}
+
+/* Ajuste y alineado de los contenidos dentro de cada comentario */
+.encabezadoComent{
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+}
+.encabezadoComent div{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 5%;
+}
+.nombreTimeline{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 0.7rem;
+}
+.reviewTimeline{
+    text-align: center;
+    padding: 0 3rem;
+}
+
+/* Ordenando disposicion de comentarios */
+#comentario-1{
+    order: 1;
+}
+#comentario-2y3{
+    order: -1;
+}
+
+/* Review o Comentario de un cliente nuevo */
+.fieldsetNewcoment{
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.comentarioCliente{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.cabeceraForm{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: end;
+    padding: 1rem 0;
+}
+.cabeceraForm input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    margin: 0 1rem;
+}
+.puntuacionCliente{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 1.2rem 1rem;
+}
+.puntuacionCliente select{
+    padding: 0.5rem;
+    border-radius: 10%;
+}
+textarea{
+    resize: none;
+}
+.buttonReview{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.7rem;
+    padding: 0.3rem 0.2rem;
+    margin: 0.3rem 1rem;
+}
+
+/* ------------- */
+/* Pagina Menu */
+
+.iframePdf{
+    width: 100%;
+    height: 101vh;
+    border: none;
+}
+
+/* ------------- */
+/* Pagina Contact */
+
+/* Centrado y definiendo las dimensiones del contenido main de "contact" */
+.boxContact{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center;
+}
+.boxContact section{
+    width: 50%;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+/* Personalizacion y ajuste de la seccion de reservas */
+.boxReservas{
+    height: 40rem;
+}
+.boxReservas form{
+    padding: 4rem 0;
+    font-size: 2rem;
+}
+.botonesForm{
+    padding: 1.5rem 0;
+}
+.fontForm {
+    font-size: 1.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0.5rem;
+}
+.email{
+    width: 29.5rem;
+}
+fieldset {
+    border: none;
+}
+/* Personalizacion y ajuste de la seccion de direccion */
+.boxDireccion{
+    height: 50rem;
+}
+.boxDireccion iframe{
+    padding: 4rem 0;
+}
+.boxDireccion p{
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

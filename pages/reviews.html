@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant-Reviews</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Restaurant</h1>
+        <nav>
+            <ul class="menuNavegacion">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="./menu.html#mainmenu">Menu</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="timeLine">
+            <div class="desplazar" id="comentario-1">
+                <article  class="comentarioBox">
+                    <div class="encabezadoComent">
+                        <img src="../assets/user-default.png" alt="Imagen de usuarios que ya dejaron la review." class="imgComentarios">
+                        <div>
+                            <span>5</span>
+                            <img src="../assets/estrella.png" alt="Imagen de estrella que representa la valoracion de otros usuarios" class="imgComentarios">
+                        </div>
+                    </div>
+                    <div >
+                        <p class="nombreTimeline">Nombre 1</p>
+                        <p class="reviewTimeline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorem earum quisquam cum dolorum nulla doloremque cupiditate dicta eius, harum consequatur tenetur ab! Obcaecati ratione, quia neque sed possimus dolore.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="linea">
+                <div class="marca"></div>
+                <div class="marca"></div>
+                <div class="marca"></div>
+            </div>
+            <div class="comentarioDoble" id="comentario-2y3">
+                <article class="comentarioBox">
+                    <div class="encabezadoComent">
+                        <img src="../assets/user-default.png" alt="Imagen de usuarios que ya dejaron la review." class="imgComentarios">
+                        <div>
+                            <span>4</span>
+                            <img src="../assets/estrella.png" alt="Imagen de estrella que representa la valoracion de otros usuarios" class="imgComentarios">
+                        </div>
+                    </div>
+                    <div>
+                        <p class="nombreTimeline">Nombre 2</p>
+                        <p class="reviewTimeline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorem earum quisquam cum dolorum nulla doloremque cupiditate dicta eius, harum consequatur tenetur ab! Obcaecati ratione, quia neque sed possimus dolore.</p>
+                    </div>
+                </article>
+                <article class="comentarioBox">
+                    <div class="encabezadoComent">
+                        <img src="../assets/user-default.png" alt="Imagen de usuarios que ya dejaron la review." class="imgComentarios">
+                        <div>
+                            <span>3</span>
+                            <img src="../assets/estrella.png" alt="Imagen de estrella que representa la valoracion de otros usuarios" class="imgComentarios">
+                        </div>
+                    </div>
+                    <div>
+                        <p class="nombreTimeline">Nombre 3</p>
+                        <p class="reviewTimeline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorem earum quisquam cum dolorum nulla doloremque cupiditate dicta eius, harum consequatur tenetur ab! Obcaecati ratione, quia neque sed possimus dolore.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="comentarioCliente">
+            <form action="get" class="formulario ">
+                <fieldset class="cabeceraForm fieldsetNewcoment">
+                    <img src="../assets/user.png" alt="Imagen del usuario que va a dejar la review." class="imgComentarios">
+                    <input type="text" name="nombreReview" id="nombreReview" placeholder="Nombre y Apellido">
+                    <div class="puntuacionCliente">
+                        <label for="valoracion">Puntuacion:</label>
+                        <select name="valoracion" id="valoracion">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5" selected>5</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldsetNewcoment">
+                    <textarea name="comentarioReview" id="comentarioReview" cols="50" rows="10"></textarea>
+                </fieldset>
+                <fieldset class="fieldsetNewcoment">
+                    <input type="submit" value="Enviar" class="buttonReview">
+                    <input type="reset" value="Restaurar" class="buttonReview">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footerDisplay">
+            <h2>Redes/Contacto</h2>
+            <hr>
+            <div class="redesSociales">
+                <a href="https://www.instagram.com/"><img src="../assets/instagram.png" alt="Link con icono de instagram"></a>
+                <a href="https://www.facebook.com/"><img src="../assets/facebook.png" alt="Link con icono de facebook"></a>
+                <a href="https://web.whatsapp.com/"><img src="../assets/whatsapp.png" alt="Link con icono de whatsapp"></a>
+            </div>
+            <div class="linksFooter" >
+                <div class="telefonoFooter">
+                    <h3>Teléfono:</h3>
+                    <a href="tel: +(54 11) 1234-5678">
+                        +(54 11) 1234-5678
+                    </a>
+                </div>
+                <div class="emailFooter">    
+                    <h3>Email:</h3>
+                    <a href="mailto:prueba@gmail.com">
+                        prueba@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
