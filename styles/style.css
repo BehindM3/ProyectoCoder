@@ -24,7 +24,7 @@ body{
 /* Header */
 header{
     width: 100%;
-    height: 15rem;
+    height: 12rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -38,9 +38,6 @@ h1{
 }
 h2{
     font-size: 2.5rem;
-}
-nav{
-    width: 100%;
 }
 .menuNavegacion{
     list-style: none;
