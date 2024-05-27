@@ -8,50 +8,51 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="container-fluid text-center">
 
-        <nav class="navbar navbar-expand-lg text-center">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg align-items-baseline">
 
-                <a class="navbar-brand" href="#"><h1>Restaurant</h1></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegacion" ><span class="navbar-toggler-icon" ></span></button>
-            
-                <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item active"><a href="#" class="nav-link"><h2>Home</h2></a></li>
-                        <li class="nav-item"><a href="./pages/about.html" class="nav-link"><h2>About&nbsp;Us</h2></a></li>
-                        <li class="nav-item"><a href="./pages/reviews.html" class="nav-link"><h2>Reviews</h2></a></li>
-                        <li class="nav-item"><a href="./pages/menu.html#mainmenu" class="nav-link"><h2>Menu</h2></a></li>
-                        <li class="nav-item"><a href="./pages/contact.html" class="nav-link"><h2>Menu</h2></a></li>
-                    </ul>
-                </div>
+            <a class="navbar-brand" href="#"><h1>Restaurant</h1></a>
+            <button class="navbar-toggler botonNavbar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegacion" ><span class="navbar-toggler-icon" ></span></button>
+        
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item "><a href="#" class="nav-link disabled" aria-dissabled="true" ><h2>Home</h2></a></li>
+                    <li class="nav-item "><a href="./pages/about.html" class="nav-link"><h2>About&nbsp;Us</h2></a></li>
+                    <li class="nav-item "><a href="./pages/reviews.html" class="nav-link"><h2>Reviews</h2></a></li>
+                    <li class="nav-item "><a href="./pages/menu.html#mainmenu" class="nav-link"><h2>Menu</h2></a></li>
+                    <li class="nav-item "><a href="./pages/contact.html" class="nav-link"><h2>Contact</h2></a></li>
+                </ul>
             </div>
-
 
         </nav>
 
 
     </header>
 
-    <!-- <main>
-        <section class="carreteFotos">
-            <article class="articuloIndex especialidad">
-                <div><img src="./assets/especialidadCarne.jpg" alt="Imagen del plato de especialidad, imagen de carne" class="imgIndex"></div>
-                <h2>Especialidad</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, inventore? Voluptate qui sit et sint quisquam, beatae aperiam. Nemo quae nostrum maiores atque quaerat in quisquam itaque voluptatum! Eaque, eius.</p>
-            </article>
-            <article class="articuloIndex variedad">
-                <div><img src="./assets/variedadPescado.jpg" alt="Imagen de la variedad de platos, imagen de pescado" class="imgIndex"></div>
-                <h2>Nuestra variedad</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, inventore? Voluptate qui sit et sint quisquam, beatae aperiam. Nemo quae nostrum maiores atque quaerat in quisquam itaque voluptatum! Eaque, eius.</p>
-            </article>
-            <article class="articuloIndex postres">
-                <div><img src="./assets/postres.jpg" alt="Imagen del apartado de postres" class="imgIndex"></div>
-                <h2>Postres</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, inventore? Voluptate qui sit et sint quisquam, beatae aperiam. Nemo quae nostrum maiores atque quaerat in quisquam itaque voluptatum! Eaque, eius.</p>
-            </article>
-        </section>
+    <main class="container-fluid">
+        <div class="boxContent">
+            <section class="carreteFotos">
+                <article class="articuloIndex especialidad">
+                    <div><img src="./assets/especialidadCarne.jpg" alt="Imagen del plato de especialidad, imagen de carne" class="imgIndex"></div>
+                    <h2>Especialidad</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, inventore? Voluptate qui sit et sint quisquam, beatae aperiam. Nemo quae nostrum maiores atque quaerat in quisquam itaque voluptatum! Eaque, eius.</p>
+                </article>
+                <article class="articuloIndex variedad">
+                    <div><img src="./assets/variedadPescado.jpg" alt="Imagen de la variedad de platos, imagen de pescado" class="imgIndex"></div>
+                    <h2>Nuestra variedad</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, inventore? Voluptate qui sit et sint quisquam, beatae aperiam. Nemo quae nostrum maiores atque quaerat in quisquam itaque voluptatum! Eaque, eius.</p>
+                </article>
+                <article class="articuloIndex postres">
+                    <div><img src="./assets/postres.jpg" alt="Imagen del apartado de postres" class="imgIndex"></div>
+                    <h2>Postres</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, inventore? Voluptate qui sit et sint quisquam, beatae aperiam. Nemo quae nostrum maiores atque quaerat in quisquam itaque voluptatum! Eaque, eius.</p>
+                </article>
+            </section>
+        </div>
     </main>
+
+    <!-- 
     <footer>
         <section class="footerDisplay">
             <h2>Redes/Contacto</h2>

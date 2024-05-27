@@ -1,64 +1,46 @@
-/* ------------- */
+/* Importamos la fuente desde google fonts para la cabecera*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
 /* Armado general de la pagina Header-Main-Footer */
 
-/* Importamos la fuente desde google fonts para la cabecera*/
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
+
 html{
     font-size: 62.5%;
-    height: 100%;
 }
+
 .arizonia-regular {
     font-family: "Arizonia", cursive;
     font-weight: 40rem;
     font-style: normal;
 } 
+
 /* Aplicamos la fuente y ajustamos la altura a todos los body del sitio web*/
+
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    height: 100%;
+    min-height: 100dvh;
 }
+
 /* Header */
+
 header{
-    width: 100%;
-    height: 12rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
     background: linear-gradient(180deg, rgb(167, 146, 119) 5%, rgb(204, 204, 204) 65%);
 }
+
 h1{
     font-family: "Arizonia", cursive;
     font-size: 7rem;
-    margin-top: 2rem;
-    margin-left: 2rem;
 }
+
 h2{
     font-size: 2.5rem;
 }
-.menuNavegacion{
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    height: 3.2rem;
-}
-.menuNavegacion li{
-    border-right: rgb(167, 146, 119) solid 0.15rem;
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-}
-.menuNavegacion a{
-    text-decoration: none;
-    width: 100%;
-    text-align: center;
-    font-size: 2.5rem;
-    color: black;
-}
+
 /* Main */
 main{
     height: auto;
