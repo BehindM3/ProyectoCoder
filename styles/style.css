@@ -96,34 +96,20 @@ a{
 /* ------------- */
 /* Pagina Index */
 
-.carreteFotos{
-    height: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-}
-.articuloIndex {
-    height: 100%;
-    width: 25%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-.especialidad{
-    order: 1;
-}
-.variedad{
-    order: 2;
-}
-.postre{
-    order: 3;
-}
-.imgIndex{
-    width: 100%;
-    height: auto;
+.imgCarousel{
+    width: auto;
+    height: 90dvh;
+    margin: 1em 0;
+    filter: blur(1px);
 }
 
+.textCarousel{
+    text-transform: uppercase;
+    margin-bottom: 230px;
+    padding: 1em;
+    backdrop-filter: brightness(30%);
+    border-radius: 1em;
+}
 /* ------------- */
 /* Pagina About Us */
 

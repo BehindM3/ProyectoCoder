@@ -29,29 +29,41 @@
 
 
     </header>
-
     <main class="container-fluid">
-        <div class="boxContent">
-            <section class="carreteFotos">
-                <article class="articuloIndex especialidad">
-                    <div><img src="./assets/especialidadCarne.jpg" alt="Imagen del plato de especialidad, imagen de carne" class="imgIndex"></div>
-                    <h2>Especialidad</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, inventore? Voluptate qui sit et sint quisquam, beatae aperiam. Nemo quae nostrum maiores atque quaerat in quisquam itaque voluptatum! Eaque, eius.</p>
-                </article>
-                <article class="articuloIndex variedad">
-                    <div><img src="./assets/variedadPescado.jpg" alt="Imagen de la variedad de platos, imagen de pescado" class="imgIndex"></div>
-                    <h2>Nuestra variedad</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, inventore? Voluptate qui sit et sint quisquam, beatae aperiam. Nemo quae nostrum maiores atque quaerat in quisquam itaque voluptatum! Eaque, eius.</p>
-                </article>
-                <article class="articuloIndex postres">
-                    <div><img src="./assets/postres.jpg" alt="Imagen del apartado de postres" class="imgIndex"></div>
-                    <h2>Postres</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, inventore? Voluptate qui sit et sint quisquam, beatae aperiam. Nemo quae nostrum maiores atque quaerat in quisquam itaque voluptatum! Eaque, eius.</p>
-                </article>
-            </section>
-        </div>
+        <section id="carouselAlimentos" class="carousel slide container-fluid">
+            <div class="carousel-inner">
+            <article class="carousel-item active">
+                <img src="./assets/especialidadCarne.jpg" class="d-block w-100 imgCarousel rounded" alt="Imagenes de carne la especialidad del restaurant">
+                <div class="textCarousel carousel-caption">
+                    <h3>especialidad</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium animi voluptas eaque quis labore quasi vero consequatur? Animi reprehenderit, vel dolorem, explicabo minus ea optio dolor facere molestiae, illum non.</p>
+                </div>
+            </article>
+            <article class="carousel-item">
+                <img src="./assets/variedadPescado.jpg" class="d-block w-100 imgCarousel rounded" alt="Imagenes de alimentos marinos de la variedad del restaurant">
+                <div class="textCarousel carousel-caption">
+                    <h3>variedad</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium animi voluptas eaque quis labore quasi vero consequatur? Animi reprehenderit, vel dolorem, explicabo minus ea optio dolor facere molestiae, illum non.</p>
+                </div>
+            </article>
+            <article class="carousel-item">
+                <img src="./assets/postres.jpg" class="d-block w-100 imgCarousel rounded" alt="Imagenes de postres especiales">
+                <div class="textCarousel carousel-caption">
+                    <h3>postres</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium animi voluptas eaque quis labore quasi vero consequatur? Animi reprehenderit, vel dolorem, explicabo minus ea optio dolor facere molestiae, illum non.</p>
+                </div>
+            </article>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAlimentos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAlimentos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </section>
     </main>
- 
     <footer>
         <section class="footerDisplay">
             <h2>Redes/Contacto</h2>
