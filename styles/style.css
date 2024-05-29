@@ -30,7 +30,7 @@ body{
 
 header{
     background: linear-gradient(180deg, rgb(167, 146, 119) 5%, rgb(204, 204, 204) 65%);
-    width: 100%;
+    
 }
 
 h1{
@@ -40,6 +40,12 @@ h1{
 
 h2{
     font-size: 3rem;
+}
+
+@media (max-width: 349px){
+    header nav{
+        justify-content: center !important;
+    }
 }
 
 /* Main */
@@ -63,10 +69,9 @@ footer{
     align-items: center;
     align-content: flex-start;
 }
-hr{
-    height: 0.2rem;
-    width: 50rem;
-    background-color: black;
+.footerDisplay h2{
+    padding: 0 10%;
+    border-bottom: solid rgb(167, 146, 119) 0.1em;
 }
 .redesSociales{
     display: flex;
@@ -320,6 +325,14 @@ textarea{
     border-bottom: solid rgb(167, 146, 119) 0.1em;
 }
 
+/* Personalizacion y ajuste de la seccion de direccion */
+
+.boxDireccion iframe{
+    width: 80%; 
+    height: 40dvh; 
+    border: 0;
+}
+
 /* Personalizacion y ajuste de la seccion de reservas */
 
 .boxReservas form{
@@ -349,20 +362,4 @@ fieldset {
     font-size: 1.8rem;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-}
-
-/* Configurando mensaje */
-
-#mensaje {
-    display: none;
-    background-color: whitesmoke;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid rgb(167, 146, 119);
-    border-radius: 5px;
-}
-
-/* Estilo del mensaje cuando es mostrado */
-#mensaje:target {
-    display: block;
 }
