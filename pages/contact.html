@@ -26,21 +26,26 @@
 
         </nav>
     </header>
-    <main>
-        <div class="boxContact">
-            <section class="boxReservas">
+    <main class="container d-flex align-items-center">
+        <div class="boxContact row text-center">
+            <section class="boxDireccion col-md-12 col-lg-6 mt-3">
+                <h2>Direccion</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.0832789962633!2d-4.460735323606625!3d40.184960069712396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4035b57551b6f3%3A0x84be095154d712f6!2sC.%20Falsa%2C%2045908%20Aldea%20en%20Cabo%2C%20Toledo%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1714966898531!5m2!1ses-419!2sar" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, non laborum dolore maxime placeat dignissimos aliquam quasi consequatur dolorem voluptates, minima ipsam tenetur a eius, recusandae omnis illum molestiae quis.</p>
+            </section>
+            <section class="boxReservas col-md-12 col-lg-6 mt-3">
                 <h2>Reservas</h2>
-                <hr>
                 <form action="get">
                     <label for="nombreCompleto" class="fontForm">Nombre y Apellido: </label>
-                    <input type="text" name="nombreCompleto" id="nombreCompleto" class="fontForm">
+                    <input type="text" name="nombreCompleto" id="nombreCompleto" class="fontForm" required>
                     <fieldset>
                         <label for="email">Email: </label>
-                        <input type="email" name="email" id="email" class="fontForm email">
+                        <input type="email" name="email" id="email" class="fontForm email" required>
                     </fieldset>
                     <fieldset>
                         <label for="cantPersonas">Cantidad de comensales: </label>
-                        <select name="cantPersonas" id="cantPersonas" class="fontForm">
+                        <select name="cantPersonas" id="cantPersonas" class="fontForm" required>
+                            <option value="0" selected disabled>0</option>
                             <option value="1" class="fontForm">1</option>
                             <option value="2" class="fontForm">2</option>
                             <option value="3" class="fontForm">3</option>
@@ -50,18 +55,12 @@
                         </select>
                     </fieldset>
                     <label for="fecha" class="fontForm">Fecha:</label>
-                    <input type="date" name="fecha" id="fecha" class="fontForm">
+                    <input type="date" name="fecha" id="fecha" class="fontForm" required>
                     <fieldset class="botonesForm">
                         <input type="submit" value="Enviar" class="fontForm">
                         <input type="reset" value="Restaurar" class="fontForm">
                     </fieldset>
                 </form>
-            </section>
-            <section class="boxDireccion">
-                <h2>Direccion</h2>
-                <hr>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.0832789962633!2d-4.460735323606625!3d40.184960069712396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4035b57551b6f3%3A0x84be095154d712f6!2sC.%20Falsa%2C%2045908%20Aldea%20en%20Cabo%2C%20Toledo%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1714966898531!5m2!1ses-419!2sar" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, non laborum dolore maxime placeat dignissimos aliquam quasi consequatur dolorem voluptates, minima ipsam tenetur a eius, recusandae omnis illum molestiae quis.</p>
             </section>
         </div>
     </main>
