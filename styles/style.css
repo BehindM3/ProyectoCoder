@@ -173,86 +173,58 @@ a{
 /* ------------- */
 /* Pagina Review */
 
-/* Ajustes imagenes */
-.imgComentarios {
+.contenedorComentarios{
+    width: 90dvw;
+    margin: 5dvh 5dvw;
+    padding: .5rem;
+    box-shadow: 0rem 0rem 2rem .5rem rgba(0,0,0,.3);
+    border-radius: 2.5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.comentarios{
+    position: relative;
+    flex: 1 1 15rem;
+    background-color:rgb(167, 146, 119);
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    border-radius: 3%;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    filter: brightness(105%);
+}
+
+.perfilComentarios {
     height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+/* ------------------------------------------------- */
+.comentarios__valuacion--valor{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.comentarios__valuacion img{
+    height: 1rem;
     width: auto;
 }
 
-/* Linea de comentarios en forma de linea del tiempo */
-.timeLine{
-    height: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
+.comentarios__escrito{
+    display: -webkit-box;
+    -webkit-line-clamp: 4 ;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
-.linea {
-    width: 70%;
-    height: 0.2rem;
-    background-color: black;
-    margin: 2rem;
-    display: flex;
-    justify-content: space-between;
-}
-.marca{
-    border-radius: 100%;
-    width: 0.7rem;
-    height: 0.7rem;
-    background-color: black;
-    
-}
-.comentarioBox{
-    width: 25vh;
-    font-size: 1.5rem;
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 1vh 20vw;
-}
-.desplazar{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-.comentarioDoble{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    opacity: 65%;
-}
-
-/* Ajuste y alineado de los contenidos dentro de cada comentario */
-.encabezadoComent{
-    width: 100%;
-    font-size: 3rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-
-}
-.encabezadoComent div{
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 0 5%;
-}
-.nombreTimeline{
-    font-size: 1.8rem;
-    font-weight: bold;
-    padding-top: 0.5rem;
-    padding-bottom: 0.7rem;
-}
-.reviewTimeline{
-    text-align: center;
-    padding: 0 3rem;
-}
-
-/* Ordenando disposicion de comentarios */
-#comentario-1{
-    order: 1;
-}
-#comentario-2y3{
-    order: -1;
+.comentarios__escrito--nombre{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 /* Review o Comentario de un cliente nuevo */
