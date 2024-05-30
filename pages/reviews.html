@@ -107,15 +107,17 @@
                 </div>
             </article>
 
-       </section>
+        </section>
         
-        <section class="comentarioCliente">
-            <form action="get" class="formulario ">
-                <fieldset class="cabeceraForm fieldsetNewcoment">
-                    <img src="../assets/user.png" alt="Imagen del usuario que va a dejar la review." class="perfilComentarios">
-                    <input type="text" name="nombreReview" id="nombreReview" placeholder="Nombre y Apellido">
-                    <div class="puntuacionCliente">
-                        <label for="valoracion">Puntuacion:</label>
+        <section class="contenedorReview">
+            <h3>¡Dejanos tu reseña!</h3>
+            <div class="review">
+                <form action="get" class="formulario">
+                    <fieldsett class="formulario__infoUser">
+                        <img src="../assets/user-default.png" alt="Imagen de usuario por default">
+                        <input type="text" name="username" id="username" placeholder="Nombre y Apellido">
+                    </fieldset>
+                    <fieldset class="formulario__valoracion">
                         <select name="valoracion" id="valoracion">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -124,17 +126,17 @@
                             <option value="4">4</option>
                             <option value="5" selected>5</option>
                         </select>
-                    </div>
-                </fieldset>
-                <fieldset class="fieldsetNewcoment">
-                    <textarea name="comentarioReview" id="comentarioReview" cols="50" rows="10"></textarea>
-                </fieldset>
-                <fieldset class="fieldsetNewcoment">
-                    <input type="submit" value="Enviar" class="buttonReview">
-                    <input type="reset" value="Restaurar" class="buttonReview">
-                </fieldset>
-            </form>
+                        <label for="valoracion"><img src="../assets/estrella.png" alt="Representacion de valoracion en foma de estrella"></label>
+                    </fieldset>
+                    <fieldset class="formulario__review">
+                        <textarea name="nuevaReview" id="nuevaReview" placeholder="Contanos tu experiencia"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Enviar" class="botonEnviar">
+                    <input type="reset" value="Restaurar" class=botonRestaurar"">
+                </form>
+            </div>
         </section>
+
     </main>
     <footer>
         <section class="footerDisplay">

@@ -23,7 +23,7 @@ html{
 
 body{
     font-family: 'Times New Roman', Times, serif;
-    
+    background-color: rgb(204, 204, 204);
 }
 
 /* Header */
@@ -228,54 +228,113 @@ a{
 }
 
 /* Review o Comentario de un cliente nuevo */
-.fieldsetNewcoment{
-    border: none;
-    font-size: 1.5rem;
-    font-weight: bold;
+.contenedorReview{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 80dvw;
+    margin: 2rem 10dvw;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
-.comentarioCliente{
-    width: 100%;
+
+.contenedorReview h3{
+    text-transform: uppercase;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    margin: 4rem 0 2rem 0;
+    font-weight: 600;
+    line-height: 1.2; 
+}
+
+.review{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(167, 146, 119);
+    box-shadow: 0rem 0rem 2rem .5rem rgba(0,0,0,.3);
+    border-radius: 5%;
+    margin: 1rem 1rem;
+    padding: 1rem;
 }
+
 .formulario{
-    width: 100%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
+    flex: 1 1 20rem;
+    font-size: 1.5rem;
+}
+
+.formulario__infoUser{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 20rem;
+    justify-content: center;
     align-items: center;
 }
-.cabeceraForm{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: end;
-    padding: 1rem 0;
+
+.formulario__infoUser img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    padding: 1rem;
 }
-.cabeceraForm input{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.7rem;
-    padding: 1rem 0;
+
+.formulario__infoUser input{
+    height: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 2%;
     margin: 0 1rem;
+    background-color: whitesmoke;
+    border: .1rem solid rgba(0,0,0,0.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
-.puntuacionCliente{
+
+.formulario__valoracion{
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
-    margin: 1.2rem 1rem;
 }
-.puntuacionCliente select{
-    padding: 0.5rem;
-    border-radius: 10%;
+
+.formulario__valoracion #valoracion{
+    width: 3rem;
+    height: 2rem;
+    border-radius: 2%;
+    margin: 0 1rem;
+    background-color: whitesmoke;
+    border: .1rem solid rgba(0,0,0,0.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
-textarea{
+
+.formulario__valoracion img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.formulario__review{
+    width: 100%;
+}
+
+.formulario__review textarea{
+    width: 80%;
+    height: 20dvh;
+    font-size: 1.5rem;
+    border-radius: 2%;
+    background-color: whitesmoke;
+    border: .1rem solid rgba(0,0,0,0.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
     resize: none;
 }
-.buttonReview{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.7rem;
-    padding: 0.3rem 0.2rem;
-    margin: 0.3rem 1rem;
+
+:is(.botonEnviar, .botonRestaurar){
+    background-color: whitesmoke;
+    border: .1rem solid rgba(0,0,0,0.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    padding: 0 1rem;
+    margin: 0 1rem;
 }
 
 /* ------------- */
@@ -340,3 +399,4 @@ fieldset {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
+
