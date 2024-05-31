@@ -27,14 +27,20 @@
         </nav>
     </header>
     <main>
-        <div>
-            <section id="carouselAbout" class="carousel slide container text-center">
+        <div class="contenedorAbout">
+            <div class="contenedorAbout__botones">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAbout" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+            </div>
+            <section id="carouselAbout" class="contenedorAbout__carousel carousel slide container-fluid text-center">
                 
                 <div class="carousel-inner">
                     <article class="carousel-item active">
                         <div class="row">
                             <img src="../assets/origenAbout.jpg" class="col-12 col-md-6" alt="Imagen de un campo que representa el origen del restaurant">
-                            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                            <div class="textoCarrousel col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
                                 <h3>El origen</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minus repellendus sapiente perspiciatis dicta sequi. Ipsa velit cum sed labore voluptatem quo. Voluptatum architecto reprehenderit itaque quae harum eveniet neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum nihil commodi suscipit asperiores magnam illum perspiciatis, reiciendis obcaecati quos doloribus laudantium esse excepturi consequatur aliquid odit consectetur. Tenetur, cumque animi.</p>
                             </div>
@@ -43,7 +49,7 @@
                     <article class="carousel-item ">
                         <div class="row">
                             <img src="../assets/familiaAbout.jpg" class="col-12 col-md-6" alt="Imagen que muestra a la familia que llevo adelante al restaurant">
-                            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                            <div class="textoCarrousel col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
                                 <h3>La familia</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minus repellendus sapiente perspiciatis dicta sequi. Ipsa velit cum sed labore voluptatem quo. Voluptatum architecto reprehenderit itaque quae harum eveniet neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum nihil commodi suscipit asperiores magnam illum perspiciatis, reiciendis obcaecati quos doloribus laudantium esse excepturi consequatur aliquid odit consectetur. Tenetur, cumque animi.</p>
                             </div>
@@ -52,7 +58,7 @@
                     <article class="carousel-item ">
                         <div class="row">
                             <img src="../assets/inspiracionAbout.jpg" class="col-12 col-md-6" alt="Imagen ilustrativa para dar una idea de que llevo a la inspiracion de lo que es hoy el restaurant">
-                            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                            <div class="textoCarrousel col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
                                 <h3>Inspiracion</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minus repellendus sapiente perspiciatis dicta sequi. Ipsa velit cum sed labore voluptatem quo. Voluptatum architecto reprehenderit itaque quae harum eveniet neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum nihil commodi suscipit asperiores magnam illum perspiciatis, reiciendis obcaecati quos doloribus laudantium esse excepturi consequatur aliquid odit consectetur. Tenetur, cumque animi.</p>
                             </div>
@@ -61,34 +67,20 @@
                     <article class="carousel-item ">
                         <div class="row">
                             <img src="../assets/actualidadAbout.jpg" class="col-12 col-md-6" alt="Imagen del restaurant actual">
-                            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                            <div class="textoCarrousel col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
                                 <h3>Actualidad</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minus repellendus sapiente perspiciatis dicta sequi. Ipsa velit cum sed labore voluptatem quo. Voluptatum architecto reprehenderit itaque quae harum eveniet neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum nihil commodi suscipit asperiores magnam illum perspiciatis, reiciendis obcaecati quos doloribus laudantium esse excepturi consequatur aliquid odit consectetur. Tenetur, cumque animi.</p>
                             </div>
                         </div>
                     </article>
                 </div>
-
-                
-                
             </section>
-        
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAbout" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselAbout" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Proximo</span>
-              </button>
-
-            <div class="carousel-indicators mt-3">
-                <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              </div>
+            <div class="contenedorAbout__botones">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselAbout" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Proximo</span>
+                </button>
+            </div>
 
         </div>
     </main>
