@@ -356,7 +356,7 @@ footer .footerDisplay .linksFooter a {
   padding: 1.5rem 0;
 }
 
-@media (max-width: 349px) {
+@media (max-width: 4256px) {
   header nav {
     justify-content: center !important;
   }
