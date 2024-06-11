@@ -1,0 +1,56 @@
+:is(.boxContact, .boxDireccion) h2 {
+    font-weight: 600;
+}
+
+.boxContact{
+
+    .fontForm {
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0.5rem;
+    }
+
+    section h2{
+        padding: 0 10%;
+        border-bottom: solid rgb(167, 146, 119) 0.1em;
+    }
+
+    .boxDireccion{ 
+
+        iframe{
+            width: 80%; 
+            height: 40dvh; 
+            border: 0;
+            padding: 4rem 0;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+
+    .boxReservas{ 
+        
+        form{
+            padding: 4rem 0;
+            font-size: 2rem;
+
+            fieldset {
+                border: none;
+
+                .email{
+                    width: 50%;
+                }
+            }
+    
+            .botonesForm{
+                padding: 1.5rem 0;
+            }
+
+        }
+
+    }    
+}
+
+
+

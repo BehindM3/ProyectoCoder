@@ -1,0 +1,52 @@
+.contenedorAbout{
+    width: 90dvw;
+    min-height: 60dvh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 10dvh 5dvw;
+    background-color: $bg-oscuro;
+    border: .1rem solid $bg-oscuro;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
+    border-radius: 5%;
+
+    .contenedorAbout__botones{
+        width: 5%;
+        padding: 20rem 0;
+        position: relative;
+    
+        button{
+            width: 100%;
+        }
+    }
+
+    .contenedorAbout__carousel{
+        width: 90%;
+        height: auto;
+        margin: 5dvh 0 ;
+
+        img{
+            clip-path: inset(3% round 5%);
+        }
+    }
+
+}
+
+.textoCarrousel {
+    
+    h3{
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.2; 
+        margin: 4rem 0 1rem 0;
+
+    }
+
+    p{
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 1.2; 
+        margin-bottom: 1rem;
+    }
+}

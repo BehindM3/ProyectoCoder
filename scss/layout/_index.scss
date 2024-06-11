@@ -1,0 +1,37 @@
+.containerMain{
+
+    display: flex;
+    align-items: center;
+
+    .carousel{
+
+        .imgCarousel{
+            width: auto;
+            height: 70dvh;
+            margin: 1em 0;
+            filter: blur(4px);
+        }
+        
+        .textCarousel{
+            text-align: center;
+            white-space: pre-wrap;
+            text-transform: uppercase;
+            text-shadow: $textoIluminado;
+            margin: 10% 0;
+            padding: 2%;
+            background-color: rgba($bg-oscuro, .8);
+            color: black;
+            backdrop-filter: brightness(100%);
+            border-radius: 1em;
+
+            h3{
+                font-weight: bold;
+            }
+            p{
+                font-size: 2rem;
+                font-weight: 400;
+            }
+        }
+
+    }
+}

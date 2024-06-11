@@ -1,0 +1,172 @@
+.mainReviews{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .contenedorComentarios{
+        width: 90dvw;
+        margin: 5dvh 5dvw;
+        padding: .5rem;
+        box-shadow: $boxShadows;
+        border-radius: 5%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+
+        .comentarios{
+            position: relative;
+            flex: 1 1 15rem;
+            background-color:rgb(167, 146, 119);
+            border: .1rem solid rgba(0,0,0,.2);
+            box-shadow: $sombraContenedoresComentarios;
+            border-radius: 3%;
+            padding: 1rem;
+            margin: 1rem;
+            text-align: center;
+            filter: brightness(105%);
+        
+            .perfilComentarios {
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+            }
+            
+            .comentarios__valuacion {
+                
+                img{
+                    height: 1rem;
+                    width: auto;
+                }
+            }
+
+            .comentarios__escrito{
+                display: -webkit-box;
+                -webkit-line-clamp: 4 ;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            
+                .comentarios__escrito--nombre{
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 1.9rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+        
+        }
+    }
+
+    /* Review o Comentario de un cliente nuevo */
+    .contenedorReview{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 80dvw;
+        margin: 2rem 10dvw;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+
+        h3{
+            text-transform: uppercase;
+            box-shadow: $sombraContenedoresComentarios;
+            margin: 4rem 0 2rem 0;
+            font-weight: 600;
+            line-height: 1.2; 
+        }
+
+        .review{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(167, 146, 119);
+            box-shadow: $sombraContenedoresComentarios;
+            border-radius: 5%;
+            margin: 1rem 1rem;
+            padding: 1rem;
+
+            .formulario{
+                display: flex;
+                flex-flow: column wrap;
+                flex: 1 1 20rem;
+                font-size: 1.5rem;
+
+                .formulario__infoUser{
+                    display: flex;
+                    flex-flow: row wrap;
+                    flex: 1 1 20rem;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        width: 8rem;
+                        height: 8rem;
+                        border-radius: 50%;
+                        padding: 1rem;
+                    }
+                    
+                    input{
+                        height: 2rem;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 1.5rem;
+                        text-align: center;
+                        border-radius: 2%;
+                        margin: 0 1rem;
+                        background-color: whitesmoke;
+                        border: .1rem solid rgba(0,0,0,0.2);
+                        box-shadow: $sombraContenedoresComentarios;
+                    }
+                }
+
+                .formulario__valoracion{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    #valoracion{
+                        width: 3rem;
+                        height: 2rem;
+                        border-radius: 2%;
+                        margin: 0 1rem;
+                        background-color: whitesmoke;
+                        border: .1rem solid rgba(0,0,0,0.2);
+                        box-shadow: $sombraContenedoresComentarios;
+                    }
+
+                    img{
+                        width: 4rem;
+                        height: 4rem;
+                    }
+
+
+                }
+
+                .formulario__review{
+                    width: 100%;
+
+                    textarea{
+                        width: 80%;
+                        height: 20dvh;
+                        font-size: 1.5rem;
+                        border-radius: 2%;
+                        background-color: whitesmoke;
+                        border: .1rem solid rgba(0,0,0,0.2);
+                        box-shadow: $sombraContenedoresComentarios;
+                        resize: none;
+                    }
+                }
+
+                :is(.botonEnviar, .botonRestaurar){
+                    background-color: whitesmoke;
+                    border: .1rem solid rgba(0,0,0,0.2);
+                    box-shadow: $sombraContenedoresComentarios;
+                    padding: 0 1rem;
+                    margin: 0 1rem;
+                }
+            }
+        }
+    }
+}

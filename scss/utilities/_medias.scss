@@ -1,0 +1,23 @@
+@media (max-width: 349px){
+    header nav{
+        justify-content: center !important;
+    }
+    .containerMain{    
+        .carousel{
+            .imgCarousel{
+                width: auto;
+                height: 70dvh;
+                margin: 1em 0;
+                filter: blur(1px);
+            }
+            .textCarousel{
+                h3{
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}

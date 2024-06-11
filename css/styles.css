@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(204, 204, 204);
+}
+
+header {
+  background: linear-gradient(180deg, rgb(167, 146, 119) 5%, rgb(204, 204, 204) 65%);
+}
+
+h1 {
+  font-family: "DM Serif Text", serif;
+  font-size: 7rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+main {
+  min-height: 90dvh;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background: linear-gradient(360deg, rgb(167, 146, 119) 0%, rgb(204, 204, 204) 98%);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+footer .footerDisplay {
+  margin: 2em 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start;
+}
+footer .footerDisplay h2 {
+  padding: 0 10%;
+  border-bottom: solid rgb(167, 146, 119);
+}
+footer .footerDisplay .redesSociales {
+  display: flex;
+  flex-flow: row nowrap;
+}
+footer .footerDisplay .redesSociales a {
+  margin: 2rem;
+}
+footer .footerDisplay .redesSociales img {
+  height: 4.5rem;
+  width: auto;
+}
+footer .footerDisplay .linksFooter div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+footer .footerDisplay .linksFooter :is(.telefonoFooter, .emailFooter) {
+  align-items: baseline;
+  font-size: 1.5rem;
+}
+footer .footerDisplay .linksFooter a {
+  margin: 0rem 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.containerMain {
+  display: flex;
+  align-items: center;
+}
+.containerMain .carousel .imgCarousel {
+  width: auto;
+  height: 70dvh;
+  margin: 1em 0;
+  filter: blur(4px);
+}
+.containerMain .carousel .textCarousel {
+  text-align: center;
+  white-space: pre-wrap;
+  text-transform: uppercase;
+  text-shadow: 0.2rem 0.5rem 1rem rgba(255, 255, 255, 0.5);
+  margin: 10% 0;
+  padding: 2%;
+  background-color: rgba(167, 146, 119, 0.8);
+  color: black;
+  backdrop-filter: brightness(100%);
+  border-radius: 1em;
+}
+.containerMain .carousel .textCarousel h3 {
+  font-weight: bold;
+}
+.containerMain .carousel .textCarousel p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.contenedorAbout {
+  width: 90dvw;
+  min-height: 60dvh;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 10dvh 5dvw;
+  background-color: rgb(167, 146, 119);
+  border: 0.1rem solid rgb(167, 146, 119);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  border-radius: 5%;
+}
+.contenedorAbout .contenedorAbout__botones {
+  width: 5%;
+  padding: 20rem 0;
+  position: relative;
+}
+.contenedorAbout .contenedorAbout__botones button {
+  width: 100%;
+}
+.contenedorAbout .contenedorAbout__carousel {
+  width: 90%;
+  height: auto;
+  margin: 5dvh 0;
+}
+.contenedorAbout .contenedorAbout__carousel img {
+  clip-path: inset(3% round 5%);
+}
+
+.textoCarrousel h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 4rem 0 1rem 0;
+}
+.textoCarrousel p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.mainReviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* Review o Comentario de un cliente nuevo */
+}
+.mainReviews .contenedorComentarios {
+  width: 90dvw;
+  margin: 5dvh 5dvw;
+  padding: 0.5rem;
+  box-shadow: 0rem 0rem 2rem 0.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.mainReviews .contenedorComentarios .comentarios {
+  position: relative;
+  flex: 1 1 15rem;
+  background-color: rgb(167, 146, 119);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 3%;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  filter: brightness(105%);
+}
+.mainReviews .contenedorComentarios .comentarios .perfilComentarios {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+.mainReviews .contenedorComentarios .comentarios .comentarios__valuacion img {
+  height: 1rem;
+  width: auto;
+}
+.mainReviews .contenedorComentarios .comentarios .comentarios__escrito {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.mainReviews .contenedorComentarios .comentarios .comentarios__escrito .comentarios__escrito--nombre {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.mainReviews .contenedorReview {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 80dvw;
+  margin: 2rem 10dvw;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+.mainReviews .contenedorReview h3 {
+  text-transform: uppercase;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  margin: 4rem 0 2rem 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.mainReviews .contenedorReview .review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(167, 146, 119);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  margin: 1rem 1rem;
+  padding: 1rem;
+}
+.mainReviews .contenedorReview .review .formulario {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 1 20rem;
+  font-size: 1.5rem;
+}
+.mainReviews .contenedorReview .review .formulario .formulario__infoUser {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 20rem;
+  justify-content: center;
+  align-items: center;
+}
+.mainReviews .contenedorReview .review .formulario .formulario__infoUser img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.mainReviews .contenedorReview .review .formulario .formulario__infoUser input {
+  height: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 2%;
+  margin: 0 1rem;
+  background-color: whitesmoke;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+.mainReviews .contenedorReview .review .formulario .formulario__valoracion {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.mainReviews .contenedorReview .review .formulario .formulario__valoracion #valoracion {
+  width: 3rem;
+  height: 2rem;
+  border-radius: 2%;
+  margin: 0 1rem;
+  background-color: whitesmoke;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+.mainReviews .contenedorReview .review .formulario .formulario__valoracion img {
+  width: 4rem;
+  height: 4rem;
+}
+.mainReviews .contenedorReview .review .formulario .formulario__review {
+  width: 100%;
+}
+.mainReviews .contenedorReview .review .formulario .formulario__review textarea {
+  width: 80%;
+  height: 20dvh;
+  font-size: 1.5rem;
+  border-radius: 2%;
+  background-color: whitesmoke;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  resize: none;
+}
+.mainReviews .contenedorReview .review .formulario :is(.botonEnviar, .botonRestaurar) {
+  background-color: whitesmoke;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+.objectPdf {
+  width: 100%;
+  height: 102vh;
+  overflow: hidden;
+  border: none;
+}
+
+:is(.boxContact, .boxDireccion) h2 {
+  font-weight: 600;
+}
+
+.boxContact .fontForm {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0.5rem;
+}
+.boxContact section h2 {
+  padding: 0 10%;
+  border-bottom: solid rgb(167, 146, 119) 0.1em;
+}
+.boxContact .boxDireccion iframe {
+  width: 80%;
+  height: 40dvh;
+  border: 0;
+  padding: 4rem 0;
+}
+.boxContact .boxDireccion p {
+  text-align: center;
+}
+.boxContact .boxReservas form {
+  padding: 4rem 0;
+  font-size: 2rem;
+}
+.boxContact .boxReservas form fieldset {
+  border: none;
+}
+.boxContact .boxReservas form fieldset .email {
+  width: 50%;
+}
+.boxContact .boxReservas form .botonesForm {
+  padding: 1.5rem 0;
+}
+
+@media (max-width: 349px) {
+  header nav {
+    justify-content: center !important;
+  }
+  .containerMain .carousel .imgCarousel {
+    width: auto;
+    height: 70dvh;
+    margin: 1em 0;
+    filter: blur(1px);
+  }
+  .containerMain .carousel .textCarousel h3 {
+    font-size: 2.5rem;
+  }
+  .containerMain .carousel .textCarousel p {
+    font-size: 1.7rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

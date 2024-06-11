@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: $fuenteTexto;
+    background-color: $bg-claro;
+}
+
+header{
+    background: $gradienteHeaderFondo;
+    
+}
+
+h1{
+    font-family: $fuenteTitulo;
+    font-size: 7rem;
+    font-weight: 400;
+}
+h2{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+
+main{
+    min-height: 90dvh;
+    width: 100%;
+}
+/* Footer */
+footer{
+    width: 100%;
+    background: $gradienteFooterFondo;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    .footerDisplay{
+        margin: 2em 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: flex-start;
+        
+        h2{
+            padding: 0 10%;
+            border-bottom: solid $bg-oscuro;
+        }
+
+        .redesSociales{
+            display: flex;
+            flex-flow: row nowrap;
+        
+            a{
+                margin: 2rem;
+            }
+            img{
+                height: 4.5rem;
+                width: auto;
+            }
+        }
+
+        .linksFooter{
+
+            div{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+            }        
+    
+            :is(.telefonoFooter, .emailFooter){
+                align-items: baseline;
+                font-size: 1.5rem;
+            }
+
+            a{
+                margin: 0rem 0.5rem;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+    }
+}

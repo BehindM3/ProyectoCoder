@@ -1,0 +1,9 @@
+$fuenteTitulo: "DM Serif Text", serif;
+$fuenteTexto: 'Times New Roman', Times, serif;
+$bg-claro: rgb(204,204,204);
+$bg-oscuro: rgb(167, 146, 119);
+$gradienteHeaderFondo: linear-gradient(180deg, $bg-oscuro 5%, $bg-claro 65%);
+$gradienteFooterFondo: linear-gradient(360deg, $bg-oscuro 0%, $bg-claro 98%);;
+$textoIluminado: .2rem .5rem 1rem rgba(white,.5);
+$boxShadows: 0rem 0rem 2rem .5rem rgba(0,0,0,.3);
+$sombraContenedoresComentarios: 0 .5rem 1rem rgba(0,0,0,.5);
