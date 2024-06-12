@@ -8,7 +8,7 @@ $textoIluminado: .2rem .5rem 1rem rgba(white,.5);
 $boxShadows: 0rem 0rem 2rem .5rem rgba(0,0,0,.3);
 $sombraContenedoresComentarios: 0 .5rem 1rem rgba(0,0,0,.5);
 
-@mixin flex-centrado(){
+@mixin flex-centrado{
     display: flex;
     justify-content: center;
     align-items: center;
