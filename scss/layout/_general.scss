@@ -41,9 +41,9 @@ main{
 footer{
     width: 100%;
     background: $gradienteFooterFondo;
-    display: flex;
+    @include flex-centrado();
     flex-flow: column nowrap;
-    justify-content: center;
+    
 
     .footerDisplay{
         margin: 2em 0;
@@ -77,6 +77,17 @@ footer{
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: center;
+
+                h3{
+                    font-weight: 600;
+                    font-size: 1.7rem;
+                }
+
+                a{
+                    margin: 0rem 0.5rem;
+                    text-decoration: none;
+                    color: black;
+                }
             }        
     
             :is(.telefonoFooter, .emailFooter){
@@ -84,11 +95,6 @@ footer{
                 font-size: 1.5rem;
             }
 
-            a{
-                margin: 0rem 0.5rem;
-                text-decoration: none;
-                color: black;
-            }
         }
 
     }

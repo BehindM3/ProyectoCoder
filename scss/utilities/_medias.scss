@@ -1,23 +1,18 @@
-@media (max-width: 4256px){
+@media (max-width: 349px){
+    
     header nav{
         justify-content: center !important;
     }
-    .containerMain{    
-        .carousel{
-            .imgCarousel{
-                width: auto;
-                height: 700px;
-                margin: 1em 0;
-                filter: blur(1px);
-            }
-            .textCarousel{
-                h3{
-                    font-size: 2.5rem;
-                }
-                p{
-                    font-size: 1.7rem;
-                }
-            }
+}
+
+@media ((max-width: 426px) or (max-height: 650px) ){
+    
+    .textCarousel{
+        h3{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.7rem;
         }
     }
 }

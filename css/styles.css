@@ -52,8 +52,9 @@ footer {
   width: 100%;
   background: linear-gradient(360deg, rgb(167, 146, 119) 0%, rgb(204, 204, 204) 98%);
   display: flex;
-  flex-flow: column nowrap;
   justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 footer .footerDisplay {
   margin: 2em 0;
@@ -83,14 +84,18 @@ footer .footerDisplay .linksFooter div {
   flex-flow: row nowrap;
   justify-content: center;
 }
-footer .footerDisplay .linksFooter :is(.telefonoFooter, .emailFooter) {
-  align-items: baseline;
-  font-size: 1.5rem;
+footer .footerDisplay .linksFooter div h3 {
+  font-weight: 600;
+  font-size: 1.7rem;
 }
-footer .footerDisplay .linksFooter a {
+footer .footerDisplay .linksFooter div a {
   margin: 0rem 0.5rem;
   text-decoration: none;
   color: black;
+}
+footer .footerDisplay .linksFooter :is(.telefonoFooter, .emailFooter) {
+  align-items: baseline;
+  font-size: 1.5rem;
 }
 
 .containerMain {
@@ -99,14 +104,13 @@ footer .footerDisplay .linksFooter a {
 }
 .containerMain .carousel .imgCarousel {
   width: auto;
-  height: 70dvh;
+  height: 700px;
   margin: 1em 0;
   filter: blur(4px);
 }
 .containerMain .carousel .textCarousel {
   text-align: center;
   white-space: pre-wrap;
-  text-transform: uppercase;
   text-shadow: 0.2rem 0.5rem 1rem rgba(255, 255, 255, 0.5);
   margin: 10% 0;
   padding: 2%;
@@ -117,6 +121,7 @@ footer .footerDisplay .linksFooter a {
 }
 .containerMain .carousel .textCarousel h3 {
   font-weight: bold;
+  text-transform: uppercase;
 }
 .containerMain .carousel .textCarousel p {
   font-size: 2rem;
@@ -179,9 +184,9 @@ footer .footerDisplay .linksFooter a {
   box-shadow: 0rem 0rem 2rem 0.5rem rgba(0, 0, 0, 0.3);
   border-radius: 5%;
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 .mainReviews .contenedorComentarios .comentarios {
   position: relative;
@@ -218,9 +223,9 @@ footer .footerDisplay .linksFooter a {
 }
 .mainReviews .contenedorReview {
   display: flex;
-  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  flex-flow: column nowrap;
   width: 80dvw;
   margin: 2rem 10dvw;
   font-family: "Times New Roman", Times, serif;
@@ -251,10 +256,10 @@ footer .footerDisplay .linksFooter a {
 }
 .mainReviews .contenedorReview .review .formulario .formulario__infoUser {
   display: flex;
-  flex-flow: row wrap;
-  flex: 1 1 20rem;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  flex: 1 1 20rem;
 }
 .mainReviews .contenedorReview .review .formulario .formulario__infoUser img {
   width: 8rem;
@@ -275,9 +280,9 @@ footer .footerDisplay .linksFooter a {
 }
 .mainReviews .contenedorReview .review .formulario .formulario__valoracion {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  flex-flow: row nowrap;
 }
 .mainReviews .contenedorReview .review .formulario .formulario__valoracion #valoracion {
   width: 3rem;
@@ -356,20 +361,16 @@ footer .footerDisplay .linksFooter a {
   padding: 1.5rem 0;
 }
 
-@media (max-width: 4256px) {
+@media (max-width: 349px) {
   header nav {
     justify-content: center !important;
   }
-  .containerMain .carousel .imgCarousel {
-    width: auto;
-    height: 700px;
-    margin: 1em 0;
-    filter: blur(1px);
-  }
-  .containerMain .carousel .textCarousel h3 {
+}
+@media ((max-width: 426px) or (max-height: 650px)) {
+  .textCarousel h3 {
     font-size: 2.5rem;
   }
-  .containerMain .carousel .textCarousel p {
+  .textCarousel p {
     font-size: 1.7rem;
   }
 }

@@ -10,10 +10,9 @@
         padding: .5rem;
         box-shadow: $boxShadows;
         border-radius: 5%;
-        display: flex;
+        @include flex-centrado();
         flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
+        
 
         .comentarios{
             position: relative;
@@ -60,10 +59,9 @@
 
     /* Review o Comentario de un cliente nuevo */
     .contenedorReview{
-        display: flex;
+
+        @include flex-centrado(); 
         flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
         width: 80dvw;
         margin: 2rem 10dvw;
         font-family: 'Times New Roman', Times, serif;
@@ -94,11 +92,10 @@
                 font-size: 1.5rem;
 
                 .formulario__infoUser{
-                    display: flex;
+                    
+                    @include flex-centrado();
                     flex-flow: row wrap;
                     flex: 1 1 20rem;
-                    justify-content: center;
-                    align-items: center;
 
                     img{
                         width: 8rem;
@@ -121,10 +118,9 @@
                 }
 
                 .formulario__valoracion{
-                    display: flex;
+                    
+                    @include flex-centrado();
                     flex-flow: row nowrap;
-                    justify-content: center;
-                    align-items: center;
 
                     #valoracion{
                         width: 3rem;

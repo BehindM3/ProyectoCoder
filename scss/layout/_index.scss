@@ -7,7 +7,7 @@
 
         .imgCarousel{
             width: auto;
-            height: 70dvh;
+            height: 700px;
             margin: 1em 0;
             filter: blur(4px);
         }
@@ -15,7 +15,6 @@
         .textCarousel{
             text-align: center;
             white-space: pre-wrap;
-            text-transform: uppercase;
             text-shadow: $textoIluminado;
             margin: 10% 0;
             padding: 2%;
@@ -26,6 +25,7 @@
 
             h3{
                 font-weight: bold;
+                text-transform: uppercase;
             }
             p{
                 font-size: 2rem;
