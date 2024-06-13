@@ -15,7 +15,11 @@
         
 
         .comentarios{
+
             position: relative;
+            height: 230px;
+            @include flex-centrado;
+            flex-direction: column;
             flex: 1 1 15rem;
             background-color:rgb(167, 146, 119);
             border: .1rem solid rgba(0,0,0,.2);
@@ -27,9 +31,11 @@
             filter: brightness(105%);
         
             .perfilComentarios {
-                height: 4rem;
-                width: 4rem;
+                height: 7rem;
+                width: 7rem;
                 border-radius: 50%;
+                border: solid 3px rgba($bg-claro,.82);
+                box-shadow: $sombraContenedoresComentarios;
             }
             
             .comentarios__valuacion {
@@ -41,6 +47,8 @@
             }
 
             .comentarios__escrito{
+                display: flex;
+                flex-flow: column nowrap;
                 display: -webkit-box;
                 -webkit-line-clamp: 4 ;
                 -webkit-box-orient: vertical;

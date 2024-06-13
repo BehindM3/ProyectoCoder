@@ -1,0 +1,28 @@
+.comentarios__escrito{
+
+    transition: -webkit-line-clamp 1s ease;
+}
+
+.contenedorComentarios{
+
+    .comentarios{
+
+        transition: height 1.5s ease-in-out;
+
+        &:hover{
+
+            
+            height: 72rem;
+        
+            .comentarios__escrito{
+                -webkit-line-clamp: unset;
+            }
+        }
+    }
+}
+
+/*
+
+
+
+*/

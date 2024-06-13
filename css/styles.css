@@ -190,6 +190,11 @@ footer .footerDisplay .linksFooter :is(.telefonoFooter, .emailFooter) {
 }
 .mainReviews .contenedorComentarios .comentarios {
   position: relative;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   flex: 1 1 15rem;
   background-color: rgb(167, 146, 119);
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
@@ -201,15 +206,19 @@ footer .footerDisplay .linksFooter :is(.telefonoFooter, .emailFooter) {
   filter: brightness(105%);
 }
 .mainReviews .contenedorComentarios .comentarios .perfilComentarios {
-  height: 4rem;
-  width: 4rem;
+  height: 7rem;
+  width: 7rem;
   border-radius: 50%;
+  border: solid 3px rgba(204, 204, 204, 0.82);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 .mainReviews .contenedorComentarios .comentarios .comentarios__valuacion img {
   height: 1rem;
   width: auto;
 }
 .mainReviews .contenedorComentarios .comentarios .comentarios__escrito {
+  display: flex;
+  flex-flow: column nowrap;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -361,6 +370,25 @@ footer .footerDisplay .linksFooter :is(.telefonoFooter, .emailFooter) {
   padding: 1.5rem 0;
 }
 
+.comentarios__escrito {
+  transition: -webkit-line-clamp 1s ease;
+}
+
+.contenedorComentarios .comentarios {
+  transition: height 1.5s ease-in-out;
+}
+.contenedorComentarios .comentarios:hover {
+  height: 72rem;
+}
+.contenedorComentarios .comentarios:hover .comentarios__escrito {
+  -webkit-line-clamp: unset;
+}
+
+/*
+
+
+
+*/
 @media (max-width: 349px) {
   header nav {
     justify-content: center !important;
