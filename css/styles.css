@@ -102,13 +102,13 @@ footer .footerDisplay .linksFooter :is(.telefonoFooter, .emailFooter) {
   display: flex;
   align-items: center;
 }
-.containerMain .carousel .imgCarousel {
+.containerMain .carrusel-index .imgCarousel {
   width: auto;
   height: 700px;
   margin: 1em 0;
   filter: blur(4px);
 }
-.containerMain .carousel .textCarousel {
+.containerMain .carrusel-index .textCarousel {
   text-align: center;
   white-space: pre-wrap;
   text-shadow: 0.2rem 0.5rem 1rem rgba(255, 255, 255, 0.5);
@@ -119,11 +119,11 @@ footer .footerDisplay .linksFooter :is(.telefonoFooter, .emailFooter) {
   backdrop-filter: brightness(100%);
   border-radius: 1em;
 }
-.containerMain .carousel .textCarousel h3 {
+.containerMain .carrusel-index .textCarousel h3 {
   font-weight: bold;
   text-transform: uppercase;
 }
-.containerMain .carousel .textCarousel p {
+.containerMain .carrusel-index .textCarousel p {
   font-size: 2rem;
   font-weight: 400;
 }
