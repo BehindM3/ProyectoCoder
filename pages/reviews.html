@@ -117,13 +117,13 @@
         <section class="contenedorReview">
             <h3>¡Dejanos tu reseña!</h3>
             <div class="review">
-                <form action="get" class="formulario">
+                <form action="" method="get" class="formulario">
                     <fieldsett class="formulario__infoUser">
                         <img src="../assets/user-default.png" alt="Imagen de usuario por default">
-                        <input type="text" name="username" id="username" placeholder="Nombre y Apellido">
+                        <input type="text" name="username" id="username" placeholder="Nombre y Apellido" required>
                     </fieldset>
                     <fieldset class="formulario__valoracion">
-                        <select name="valoracion" id="valoracion">
+                        <select name="valoracion" id="valoracion" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -134,7 +134,7 @@
                         <label for="valoracion"><img src="../assets/estrella.png" alt="Representacion de valoracion en forma de estrella"></label>
                     </fieldset>
                     <fieldset class="formulario__review">
-                        <textarea name="nuevaReview" id="nuevaReview" placeholder="Contanos tu experiencia"></textarea>
+                        <textarea name="nuevaReview" id="nuevaReview" placeholder="Contanos tu experiencia" required></textarea>
                     </fieldset>
                     <input type="submit" value="Enviar" class="botonEnviar">
                     <input type="reset" value="Restaurar" class="botonRestaurar">
@@ -147,20 +147,20 @@
         <section class="footerDisplay">
             <h2>Redes/Contacto</h2>
             <div class="redesSociales">
-                <a href="https://www.instagram.com/"><img src="../assets/instagram.png" alt="Link con icono de instagram"></a>
-                <a href="https://www.facebook.com/"><img src="../assets/facebook.png" alt="Link con icono de facebook"></a>
-                <a href="https://web.whatsapp.com/"><img src="../assets/whatsapp.png" alt="Link con icono de whatsapp"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" alt="Link con icono de instagram"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/facebook.png" alt="Link con icono de facebook"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/whatsapp.png" alt="Link con icono de whatsapp"></a>
             </div>
             <div class="linksFooter" >
                 <div class="telefonoFooter">
                     <h3>Teléfono:</h3>
-                    <a href="tel: +(54 11) 1234-5678">
+                    <a href="tel: +(54 11) 1234-5678" target="_blank">
                         +(54 11) 1234-5678
                     </a>
                 </div>
                 <div class="emailFooter">    
                     <h3>Email:</h3>
-                    <a href="mailto:Moonlight@gmail.com">
+                    <a href="mailto:Moonlight@gmail.com" target="_blank">
                         Moonlight@gmail.com
                     </a>
                 </div>
